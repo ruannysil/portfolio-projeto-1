@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif,'Pacifico', cursive, 'Roboto';
+    color: #4d4d4d;
+}
+h1, h2, h3 {
+    margin: 0;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+.button{
+    color: #f1f1f1;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #8f2faf;
+    font-size: .9em;
+    border-radius: 3px;
+}
+.button:hover {
+    background-color: #8f2fafa7;
+}
+.openMenu,
+.closeMenu {
+    display: none;
+    color: #f1f1f1;
+    font-size: 22px;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #000;
+}
+nav > a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: 700;
+    font-size: 28px;
+    font-family: Pacifico, serif;
+    margin-left: 52px;
+}
+ nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    width: 100%;
+ }
+ nav ul li {
+    text-align: center;
+    width: 100%;
+ }
+ nav ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #f1f1f1;
+ }
+ nav ul li a:hover,
+ nav > a:hover {
+    color: #8f2faf;
+ }
+ 
+ /* Cabeçalho */
+
+header {
+    background-image: url('./img/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+header p {
+    margin-bottom: 2em;
+}
+/* Sobre */
+#sobre {
+    background-color: #8f2faf;
+    color: #f1f1f1;
+    text-align: center;
+}
+#sobre p {
+    margin-bottom: 2.5rem;
+    max-width: 1000px;
+}
+#sobre .button {
+    background-color: #f1f1f1;
+    color: #4d4d4d;
+}
+#sobre .button:hover {
+    background-color: #f1f1f158;
+    color: #fff;
+    font-weight: 500;
+}
+/* Serviços */
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#servicos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+/* Portfólio */
+#portfolio h2 {
+    margin-bottom: 20px;
+}
+#portfolio img {
+    width: 100%;
+}
+/* Contato */
+#contato {
+    text-align: center;
+    padding: 20px;
+}
+#contato a {
+    text-decoration: none;
+    color: #4d4d4d;
+}
+#contato a:hover {
+    color: #030303;
+    font-weight: 600;
+}
+#contato h2,
+#contato p {
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4d4d4d;
+    color: #f1f1f1;
+}

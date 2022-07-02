@@ -1,0 +1,105 @@
+/* Media Queries */
+@media (max-width: 1720px) and (min-width: 330px){
+    /* Navegação */
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    nav > a {
+        padding: 0px;
+    }
+    nav ul {
+        flex-direction: row;
+        width: 70%;
+    }
+    /* Cabeçalho */
+    header {
+        height: 60vh;
+        justify-content:center;
+    }
+    /* Sobre */
+    #sobre {
+        height: 70vh;
+        justify-content:center;
+        min-height: 250px;
+    }
+    #servicos {
+        flex-direction: row;
+        flex-wrap: wrap; /*eles quebram se forem maiores*/
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    #servicos h2 {
+        text-align: center;
+        width: 100%;
+    }
+    #servicos div {
+        flex-grow: 1; /*proporção que elas crescem*/
+        flex-basis: 150px; /*e o que vale a lagura maxima do meus elementos*/
+        padding: 0 10px;
+    }
+    /* Porfolio */
+    #portfolio{
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+    #portfolio h2 {
+        width: 100%;
+        text-align: center;
+    }
+    #portfolio  div {
+        width: 33.3333333333%;
+    }
+    /* contato */
+    #contato {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        max-width: 500px;
+        margin: 65px auto;
+    }
+    #contato h2,
+    #contato p {
+        width: 100%;
+        /* margin: 12px; */
+    }
+    .logo {
+        margin: 0px 144px 0 5px
+    }
+   
+}
+@media (max-width: 768px) {
+     nav {
+        flex-direction: row;
+    }
+    nav .mainMenu {
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        background: #000000e0;
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav .openMenu {
+        margin: 5px;
+        display: block;
+    }
+    nav .mainMenu li a:hover {
+        background: none;
+        color: rgb(230, 16, 226);
+    }
+}
